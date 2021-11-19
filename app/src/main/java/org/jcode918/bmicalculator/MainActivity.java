@@ -2,6 +2,7 @@ package org.jcode918.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -59,7 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void educateMe() {
-
+        // TODO : Work on Webview Activity.
+        // TODO : Create a Random Number generator to select a URL
+        //Intent intent = new Intent(getApplicationContext(), WebV);
     }
 
     private void callBmiApi() {
