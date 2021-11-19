@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
+    <string name="defaultMessage">BMI Message</string>
+    <string name="buttonText">Calculate BMI</string>
+    <string name="buttonText2">Educate Me</string>
+    <string name="bmiLabel">BMI</string>
+    <string name="bmiResults">BMI Results</string>
+    <string name="weightLabel">Enter Weight:</string>
+    <string name="header">BMI API</string>
+    <string name="heightLabel">Enter Height:</string>
+    <string name="inchesHintLabel">inches</string>
+    <string name="poundsHintLabel">pounds</string>
 </resources>

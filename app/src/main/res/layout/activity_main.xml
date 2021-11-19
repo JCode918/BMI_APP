@@ -10,12 +10,12 @@
         android:id="@+id/WeightTextView"
         android:layout_width="123dp"
         android:layout_height="33dp"
-        android:text="Enter Weight:"
+        android:text="@string/weightLabel"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/HeightTextView"
         app:layout_constraintHorizontal_bias="0.581"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HeightTextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.409" />
 
@@ -25,22 +25,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="43dp"
-        android:text="BMI API"
+        android:text="@string/header"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/HeightEditText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/HeightTextView"
         android:layout_width="123dp"
         android:layout_height="33dp"
-        android:text="Enter Height:"
+        android:text="@string/heightLabel"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/WeightTextView"
         app:layout_constraintEnd_toStartOf="@+id/HeightEditText"
@@ -56,34 +58,36 @@
         android:layout_marginTop="184dp"
         android:layout_marginEnd="28dp"
         android:ems="10"
-        android:hint="inches"
-        android:inputType="textPersonName"
+        android:hint="@string/inchesHintLabel"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/WeightEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:hint="pounds"
-        android:inputType="textPersonName"
+        android:hint="@string/poundsHintLabel"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/HeightEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HeightEditText"
         app:layout_constraintTop_toBottomOf="@+id/HeightEditText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/BmiMessageTextView"
         android:layout_width="244dp"
         android:layout_height="29dp"
-        android:text="BMI Message"
+        android:text="@string/defaultMessage"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -99,19 +103,19 @@
         android:layout_width="174dp"
         android:layout_height="36dp"
         android:layout_marginEnd="32dp"
-        android:text="BMI Results"
+        android:text="@string/bmiResults"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/WeightEditText"
         app:layout_constraintVertical_bias="0.496" />
 
     <TextView
         android:id="@+id/BMITextView"
         android:layout_width="111dp"
         android:layout_height="34dp"
-        android:text="BMI"
+        android:text="@string/bmiLabel"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -123,15 +127,28 @@
         app:layout_constraintVertical_bias="0.494" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/CalculateBMIButton"
         android:layout_width="177dp"
         android:layout_height="74dp"
         android:layout_marginTop="64dp"
-        android:text="Calculate BMI"
+        android:text="@string/buttonText"
         app:layout_constraintBottom_toTopOf="@+id/BmiResultTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/WeightEditText"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/EducateMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonText2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BmiMessageTextView"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/BmiMessageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/BmiMessageTextView"
+        app:layout_constraintVertical_bias="0.333" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

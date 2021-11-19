@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppTitleTextView"
+        android:layout_width="222dp"
+        android:layout_height="68dp"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/HeightEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BmiResultTextView"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/bmiResults"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/WeightEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/WeightEditText"
+        app:layout_constraintTop_toBottomOf="@+id/WeightEditText" />
+
+    <TextView
+        android:id="@+id/WeightTextView"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/weightLabel"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/HeightTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HeightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/HeightTextView" />
+
+    <EditText
+        android:id="@+id/WeightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/poundsHintLabel"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/HeightEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HeightEditText"
+        app:layout_constraintTop_toBottomOf="@+id/HeightEditText" />
+
+    <Button
+        android:id="@+id/CalculateBMIButton"
+        android:layout_width="177dp"
+        android:layout_height="74dp"
+        android:text="@string/buttonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/HeightTextView"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/heightLabel"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/HeightEditText"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BmiMessageTextView"
+        android:layout_width="244dp"
+        android:layout_height="29dp"
+        android:text="@string/defaultMessage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BmiResultTextView"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/BmiResultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/BmiResultTextView" />
+
+    <EditText
+        android:id="@+id/HeightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="@string/inchesHintLabel"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BMITextView"
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/bmiLabel"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/WeightTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/WeightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/WeightTextView" />
+
+    <Button
+        android:id="@+id/EducateMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/buttonText2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalculateBMIButton"
+        app:layout_constraintVertical_bias="0.454" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
