@@ -48,4 +48,12 @@ public class BMIModel {
                 '}';
     }
 
+    public String specificLink(int a ){
+        return this.more[a];
+    }
+
+    public int linkCount(){
+        return this.more.length;
+    }
+
 }

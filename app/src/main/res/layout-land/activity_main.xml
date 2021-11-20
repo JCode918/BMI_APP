@@ -108,9 +108,9 @@
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="textEnd"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/AppTitleTextView"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/AppTitleTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -122,10 +122,12 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/WeightTextView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/WeightTextView"
-        app:layout_constraintTop_toBottomOf="@+id/WeightTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/WeightTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/EducateMeButton"
@@ -134,10 +136,10 @@
         android:layout_marginBottom="28dp"
         android:text="@string/buttonText2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.973"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CalculateBMIButton"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/CalculateBMIButton"
         app:layout_constraintTop_toBottomOf="@+id/CalculateBMIButton"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.456" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
